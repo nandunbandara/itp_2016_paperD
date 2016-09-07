@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace Paper_D___ITP_Online_2016
 {
-    public partial class Form1 : Form
+    public partial class frmHome : Form
     {
-        public Form1()
+        public frmHome()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddStudent add = new AddStudent();
+            add.Show();
+        }
+
+        private void frmHome_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SearchUpdate su = new SearchUpdate();
+            su.Show();
         }
     }
 }
